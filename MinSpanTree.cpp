@@ -130,8 +130,8 @@ void MiniSpanTree_Kruskal(unsigned int adjMat[][vexCounts])
 
 void Myinfo(){
     cout << "******************************" << endl;
-    cout << "姓名：" << "冉湖" << endl;
-    cout << "学号：" << "202322040432" << endl;
+    cout << "姓名：" << "MyName" << endl;
+    cout << "学号：" << "STD_ID" << endl;
     cout << "******************************" << endl;
 }
 
