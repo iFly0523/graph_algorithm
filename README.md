@@ -13,6 +13,11 @@
 | test_main.cpp   | 主要测试主文件 |
 
 
+1.编写了三种最短路算法（Dantzig、dijkstra、ford）； 
+2.编写了两种最小生成树算法测试（Kruskal、Prim） 
+3.编写了匈牙利算法（hungarian） 
+4.编写了最优匹配算法（KM_OptimalMatch） 
+
 算法结构：
 
 ## 1.图的输入形式：
