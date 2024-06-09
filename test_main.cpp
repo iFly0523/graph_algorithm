@@ -56,31 +56,31 @@ int main()
     
     unsigned int (*adjMat)[vexCounts] = AdjMatrix(edges);
     //邻接矩阵
-    // printAdjMatrix(adjMat);
+    printAdjMatrix(adjMat);
 
-    // cout << "*************************最短路算法测试*************************" << endl;
-    // int start = 3;
-    // std::cout << "Dantzig 最短路径：" << std::endl;
-    // Dantzig(AdjMat, start);
-    // std::cout << "Dijkstra 最短路径：" << std::endl;
-    // dijkstra(AdjMat, start);
-    // std::cout << std::endl;
-    // std::cout << "Ford 最短路径：" << std::endl;
-    // ford(AdjMat, start);
+    cout << "*************************最短路算法测试*************************" << endl;
+    int start = 3;
+    std::cout << "Dantzig 最短路径：" << std::endl;
+    Dantzig(AdjMat, start);
+    std::cout << "Dijkstra 最短路径：" << std::endl;
+    dijkstra(AdjMat, start);
+    std::cout << std::endl;
+    std::cout << "Ford 最短路径：" << std::endl;
+    ford(AdjMat, start);
 
-    // cout << "*************************最小生成树算法测试*************************" << endl;
-    // cout << "Kruskal :" << endl;
-    // MiniSpanTree_Kruskal(adjMat); //Prim算法，从顶点2开始.
-    // cout << "-------------" << endl << "Prim:" << endl;
-    // MiniSpanTree_Prim(adjMat,4);//Kruskal算法
+    cout << "*************************最小生成树算法测试*************************" << endl;
+    cout << "Kruskal :" << endl;
+    MiniSpanTree_Kruskal(adjMat); //Prim算法，从顶点2开始.
+    cout << "-------------" << endl << "Prim:" << endl;
+    MiniSpanTree_Prim(adjMat,4);//Kruskal算法
 
-    // cout << "*************************匈牙利算法测试*************************" << endl;
-    // //在初始化的时候，给定一个偶图的边信息二维矩阵
-    // GraphAdjList G;
-    // InitGraph(edges,G);
-    // cout << "图的邻接表对应的信息如下："<< endl;
-    // PrintAdjList(G);
-    // hungarian(G);
+    cout << "*************************匈牙利算法测试*************************" << endl;
+    //在初始化的时候，给定一个偶图的边信息二维矩阵
+    GraphAdjList G;
+    InitGraph(edges,G);
+    cout << "图的邻接表对应的信息如下："<< endl;
+    PrintAdjList(G);
+    hungarian(G);
 
     cout << "*************************最优匹配算法测试*************************" << endl;
     // //在初始化的时候，给定一个完全偶图的边信息二维矩阵
